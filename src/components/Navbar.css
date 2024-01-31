@@ -3,7 +3,11 @@
 }
 
 .nav-link::after {
-  @apply absolute content-[""] bg-black top-full h-[3px] w-0 left-0 duration-300 group-hover:w-full;
+  @apply absolute content-[""] bg-black top-full h-[3px] w-0 left-0 duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
 }
 
 .sticky {

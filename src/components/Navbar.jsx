@@ -29,7 +29,7 @@ const Navbar = () => {
   }, [isHumbargerMenuOpened]);
 
   return (
-    <nav className="max-md:bg-white">
+    <nav className="max-md:bg-white relative">
       <div className="w-full py-3 px-10 max-md:px-5 flex justify-between items-center sticky">
         <Link to="/">
           <img
@@ -164,8 +164,8 @@ const NavItem = ({ to, text, withArrow = false, subLinks = [] }) => {
         to={to}
         className={({ isActive }) =>
           isActive
-            ? "text-black font-bold nav-link"
-            : "hover:text-black text-gray-500 nav-link"
+            ? "relative text-black font-bold nav-link"
+            : "relative hover:text-black text-gray-500 nav-link"
         }
       >
         {text}
