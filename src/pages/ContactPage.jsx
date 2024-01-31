@@ -56,26 +56,26 @@ const ContactPage = () => {
         </div>
       </div>
 
-      <div className="flex flex-col gap-8 text-center">
+      <div className="flex flex-col gap-8 text-center max-[412px]:w-full">
         <h3 className="text-md">Say Hello</h3>
-        <h1 className="text-4xl">Contact Us</h1>
-        <div className="p-36 bg-white shadow-lg flex flex-col gap-3">
-          <h3 className="text-2xl font-semibold">
+        <h1 className="text-4xl max-md:text-2xl">Contact Us</h1>
+        <div className="p-36 max-[810px]:p-16 max-[500px]:p-10 bg-white shadow-lg flex flex-col gap-3 items-center">
+          <h3 className="text-2xl font-semibold max-[640px]:text-xl">
             We would love to hear from you
           </h3>
-          <h4 className="mb-4">
+          <h4 className="mb-4 max-[640px]:max-w-40">
             Please fill out the form below if you would like to contact us
           </h4>
           <hr />
           <form className="flex flex-col gap-3 text-left justify-start">
-            <div className="flex gap-3">
+            <div className="flex max-[1370px]:flex-col gap-3">
               <div className="flex flex-col items-start gap-2">
                 <label htmlFor="name">Name</label>
                 <input
                   type="text"
                   name="name"
                   id="name"
-                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black"
+                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[1370px]:w-full"
                 />
               </div>
               <div className="flex flex-col items-start gap-2">
@@ -84,7 +84,7 @@ const ContactPage = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black"
+                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[1370px]:w-full"
                 />
               </div>
               <div className="flex flex-col items-start gap-2">
@@ -93,7 +93,7 @@ const ContactPage = () => {
                   type="text"
                   name="subject"
                   id="subject"
-                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black"
+                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[1370px]:w-full"
                 />
               </div>
             </div>
@@ -101,9 +101,8 @@ const ContactPage = () => {
             <textarea
               name="Message"
               id="message"
-              cols="30"
               rows="10"
-              className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black"
+              className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[640px]:w-full"
             ></textarea>
             <button
               type="submit"

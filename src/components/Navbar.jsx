@@ -30,35 +30,35 @@ const Navbar = () => {
 
   return (
     <nav className="max-md:bg-white">
-      {/* Hamburger menu */}
-      <div
-        className={`humbarger-menu ${
-          isHumbargerMenuOpened ? "hide-sidebar" : ""
-        }`}
-      >
-        {navLinks.map((navLink, index) => (
-          <NavItem key={index} {...navLink} />
-        ))}
-
-        {/* Get In Touch button */}
-        <NavLink to="/contact-us">
-          <button className="py-3 px-4 bg-gray-800 hover:bg-gray-500 transition-colors duration-150 text-white rounded-lg">
-            Get In Touch
-          </button>
-        </NavLink>
-      </div>
-
       <div className="w-full py-3 px-10 max-md:px-5 flex justify-between items-center sticky">
         <Link to="/">
           <img
             src="/images/navicon.png"
             alt="navbar-icon"
-            className="h-[90px] max-md:h-[70px]"
+            className="h-[90px] max-md:h-[70px] z-10"
           />
         </Link>
+        {/* Hamburger menu */}
+        <div
+          className={`humbarger-menu ${
+            isHumbargerMenuOpened ? "hide-sidebar" : ""
+          }`}
+        >
+          {navLinks.map((navLink, index) => (
+            <NavItem key={index} {...navLink} />
+          ))}
+
+          {/* Get In Touch button */}
+          <NavLink to="/contact-us">
+            <button className="py-3 px-4 bg-gray-800 hover:bg-gray-500 transition-colors duration-150 text-white rounded-lg">
+              Get In Touch
+            </button>
+          </NavLink>
+        </div>
         {/* Hamburger button */}
         <button
           className="relative group z-50 max-md:block hidden"
+          style={{ zIndex: 999 }}
           onClick={handleHamburger}
           ref={humbargerRef}
         >
