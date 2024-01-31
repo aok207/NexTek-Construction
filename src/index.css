@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply font-poppins;
+}
+
+body {
+  @apply bg-[url("/images/main-bg.jpg")] min-h-[100vh] max-w-[100vw] bg-cover;
+}
