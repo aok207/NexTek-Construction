@@ -11,11 +11,14 @@ import ConstructionWorkPage from "./pages/ConstructionWorkPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import GreenEnvironmentPage from "./pages/GreenEnvironmentPage";
 import SustainabilityPage from "./pages/SustainabilityPage";
+import SingleProjectPage from "./pages/SingleProjectPage";
 
 const App = () => {
   return (
     <>
-      <Navbar />
+      <div className="z-50 relative">
+        <Navbar />
+      </div>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
@@ -38,6 +41,7 @@ const App = () => {
           element={<SustainabilityPage />}
         />
         <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/projects/:id" element={<SingleProjectPage />} />
         <Route path="/contact-us" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

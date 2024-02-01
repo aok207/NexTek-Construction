@@ -27,16 +27,16 @@ const GreenEnvironmentPage = () => {
               Green Environment
             </h1>
             <p className="leading-relaxed">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
-              aliquid hic nulla debitis, dicta magni a sed est quibusdam,
-              impedit atque eaque totam. Tenetur quod ab nemo esse, amet
-              numquam! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Deleniti aliquid hic nulla debitis, dicta magni a sed est
-              quibusdam, impedit atque eaque totam. Tenetur quod ab nemo esse,
-              amet numquam! Lorem ipsum dolor sit, amet consectetur adipisicing
-              elit. Deleniti aliquid hic nulla debitis, dicta magni a sed est
-              quibusdam, impedit atque eaque totam. Tenetur quod ab nemo esse,
-              amet numquam!
+              Our aim is to be an industry trendsetter by making our
+              construction projects Carbon Neutral. We can deliver this through
+              working with our supply chain to calculate the full carbon
+              lifecycle of a project, using renewable sources of energy on site,
+              and through waste reduction and recycling. The projects we have
+              invested in not only reduce our Carbon Footprint they also help
+              confront some of the biggest challenges facing the planet and
+              focus on tackling the UN&apos;s Sustainable Development Goals.
+              These projects are specifically Wind Energy Projects Throughout
+              all around the Myanmar.
             </p>
             <Link to="/contact-us">
               <button className="py-3 px-4 bg-gray-200 hover:-translate-y-2 transition-transform duration-200 text-black rounded-lg max-sm:w-full">

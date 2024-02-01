@@ -19,6 +19,7 @@
 }
 
 .humbarger-menu {
-  @apply text-left w-[300px] p-10 pt-24 -right-[300px] transition-transform duration-500 fixed top-0 leading-tight font-semibold shadow-md h-screen flex flex-col gap-10 bg-white max-[400px]:p-5 max-[400px]:pt-24;
+  @apply fixed z-50 text-left w-[300px] p-10 pt-24 -right-[300px] transition-transform duration-500 top-0 leading-tight font-semibold shadow-md h-screen flex flex-col gap-10 bg-white max-[400px]:p-5 max-[400px]:pt-24;
+  z-index: 99999999999;
   transition-timing-function: cubic-bezier(0.77, 0.2, 0.05, 1);
 }

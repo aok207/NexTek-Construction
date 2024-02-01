@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "location": "115 Road, Mandalay City",
+      "images": ["/images/project1-image-1.jpg", "/images/project1-image-2.jpg"]
+    },
+    {
+      "location": "South Okakalapa Township,Yangon",
+      "images": [
+        "/images/project2-image1.jpg",
+        "/images/project2-image2.jpg",
+        "/images/project2-image3.jpg"
+      ]
+    },
+    {
+      "location": "North Dagon 38 ,Yangon",
+      "images": [
+        "/images/BuildingImage1.jpeg",
+        "/images/BuildingImage2.jpeg",
+        "/images/BuildingImage3.jpeg"
+      ]
+    }
+  ]
+}

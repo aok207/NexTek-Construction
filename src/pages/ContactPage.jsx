@@ -67,7 +67,10 @@ const ContactPage = () => {
             Please fill out the form below if you would like to contact us
           </h4>
           <hr />
-          <form className="flex flex-col gap-3 text-left justify-start">
+          <form
+            className="flex flex-col gap-3 text-left justify-start"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <div className="flex max-[1370px]:flex-col gap-3">
               <div className="flex flex-col items-start gap-2">
                 <label htmlFor="name">Name</label>
@@ -75,7 +78,7 @@ const ContactPage = () => {
                   type="text"
                   name="name"
                   id="name"
-                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[1370px]:w-full"
+                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none transition-[outline] duration-200 ease-linear focus:outline focus:outline-black max-[1370px]:w-full"
                 />
               </div>
               <div className="flex flex-col items-start gap-2">
@@ -84,7 +87,7 @@ const ContactPage = () => {
                   type="email"
                   name="email"
                   id="email"
-                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[1370px]:w-full"
+                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none transition-[outline] duration-200 ease-linear focus:outline focus:outline-black max-[1370px]:w-full"
                 />
               </div>
               <div className="flex flex-col items-start gap-2">
@@ -93,7 +96,7 @@ const ContactPage = () => {
                   type="text"
                   name="subject"
                   id="subject"
-                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[1370px]:w-full"
+                  className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none transition-[outline] duration-200 ease-linear focus:outline focus:outline-black max-[1370px]:w-full"
                 />
               </div>
             </div>
@@ -102,7 +105,7 @@ const ContactPage = () => {
               name="Message"
               id="message"
               rows="10"
-              className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none focus:outline focus:outline-black max-[640px]:w-full"
+              className="bg-gray-950/5 p-2 px-3 focus:bg-white focus:text-black rounded-md outline-none transition-[outline] duration-200 ease-linear focus:outline focus:outline-black max-[640px]:w-full"
             ></textarea>
             <button
               type="submit"
