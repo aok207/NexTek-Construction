@@ -12,6 +12,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import GreenEnvironmentPage from "./pages/GreenEnvironmentPage";
 import SustainabilityPage from "./pages/SustainabilityPage";
 import SingleProjectPage from "./pages/SingleProjectPage";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const App = () => {
   return (
@@ -20,6 +22,8 @@ const App = () => {
         <Navbar />
       </div>
       <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<ServicesPage />} />
         <Route
